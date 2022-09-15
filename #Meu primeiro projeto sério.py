@@ -7,6 +7,7 @@
 #.clear
 
 lista1 = []
+Q = len(lista1)
 
 print("CENTRAL DE PROBLEMAS")
 
@@ -25,11 +26,11 @@ while True:
         continue
 
     elif numero == "3":
-        resposta = input("Digite o número de 0 a " + str(len(lista1) - 1) + " do problema a retirar" )
+        resposta = input("Digite o número de 0 a " + str(Q - 1) + " do problema a retirar" )
         try:
             resposta = int(resposta)
         except:
-            print("Apenas responda com numeros inteiros entre 0 a " +len(lista1))
+            print("Apenas responda com numeros inteiros entre 0 a " + str(Q - 1))
         lista1.pop(resposta)  
         continue 
     
